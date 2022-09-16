@@ -228,4 +228,12 @@ while result < 9:
     i += 1
     print(lst[i])
     
-
+i = 0
+while True:
+    number = int(input("Enter a number: "))
+    i+=1
+    
+    if number == 5:
+        print(f"You entered {i} times")
+        break
+    
