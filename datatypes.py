@@ -236,4 +236,18 @@ while True:
     if number == 5:
         print(f"You entered {i} times")
         break
+
+i = 0
+string_sum = 0
+while True:
+    average_len = 0
+    string = input("Enter a word: ")
     
+    if string == 'q' or string == 'quit':
+        break
+    
+    string_sum += len(string)
+    i += 1
+    
+print(f"The average word length is: {string_sum/i}.") 
+        
