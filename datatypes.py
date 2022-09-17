@@ -267,4 +267,10 @@ while True:
     
 if i > 0:   
     print(f"The average word length is: {string_sum/i}.") 
-        
+
+
+lst = [1,3,6,10,15,21]
+i = 0
+while i < len(lst):
+    print(lst[i]**2)
+    i+=1
