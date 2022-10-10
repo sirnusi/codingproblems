@@ -217,25 +217,25 @@ This is a multi line comment
 # for i in range(len(x)-1):
 #     print(x[i] + x[i + 1])
     
-lst = [3, 3, 2, 2, 1]
+# lst = [3, 3, 2, 2, 1]
 
-result = 0
-i = 0
+# result = 0
+# i = 0
 
-while result < 9:
+# while result < 9:
     
-    result += lst[i]
-    i += 1
-    print(lst[i])
+#     result += lst[i]
+#     i += 1
+#     print(lst[i])
     
-i = 0
-while True:
-    number = int(input("Enter a number: "))
-    i+=1
+# i = 0
+# while True:
+#     number = int(input("Enter a number: "))
+#     i+=1
     
-    if number == 5:
-        print(f"You entered {i} times")
-        break
+#     if number == 5:
+#         print(f"You entered {i} times")
+#         break
 
 # i = 0
 # string_sum = 0
@@ -253,24 +253,44 @@ while True:
         
 
 
-i = 0
-string_sum = 0
-while True:
-    string = input("Enter a word: ")
+# i = 0
+# string_sum = 0
+# while True:
+#     string = input("Enter a word: ")
     
-    if string == 'q' or string == 'quit':
+#     if string == 'q' or string == 'quit':
+#         break
+    
+#     else:
+#         string_sum += len(string)
+#         i += 1
+    
+# if i > 0:   
+#     print(f"The average word length is: {string_sum/i}.") 
+
+
+# lst = [1,3,6,10,15,21]
+# i = 0
+# while i < len(lst):
+#     print(lst[i]**2)
+#     i+=1
+
+char = set()
+
+while True:
+    enter_char = input("Enter a character: ")
+
+    if len(enter_char) > 1:
+        break
+    if enter_char in char:
         break
     
-    else:
-        string_sum += len(string)
-        i += 1
-    
-if i > 0:   
-    print(f"The average word length is: {string_sum/i}.") 
+    char.add(enter_char)
+print(f"Number of unique characters entered: {len(char)}")
+      
+    # else:
+    #     char.add(enter_char)
+    #     print(f"Unique{len(char)}")
+        
 
-
-lst = [1,3,6,10,15,21]
-i = 0
-while i < len(lst):
-    print(lst[i]**2)
-    i+=1
+  
