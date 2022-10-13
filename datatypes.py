@@ -275,22 +275,49 @@ This is a multi line comment
 #     print(lst[i]**2)
 #     i+=1
 
-char = set()
+# char = set()
 
-while True:
-    enter_char = input("Enter a character: ")
+# while True:
+#     enter_char = input("Enter a character: ")
 
-    if len(enter_char) > 1:
-        break
-    if enter_char in char:
-        break
+#     if len(enter_char) > 1:
+#         break
+#     if enter_char in char:
+#         break
     
-    char.add(enter_char)
-print(f"Number of unique characters entered: {len(char)}")
+#     char.add(enter_char)
+# print(f"Number of unique characters entered: {len(char)}")
       
-    # else:
-    #     char.add(enter_char)
-    #     print(f"Unique{len(char)}")
+#     # else:
+#     #     char.add(enter_char)
+#     #     print(f"Unique{len(char)}")
         
+# try:
+#     2 / 0
+# except Exception as e:
+#     print("Exception", e)
+# finally:
+#     print("Done")    
+# raise Exception("A new error")
 
-  
+
+numerator = input("Enter the numerator: ")
+denominator = input("Enter the denominator: ")
+try:
+    numerator = float(numerator)
+except Exception as e:
+    print("The numerator is not a number")
+try:
+    denominator = float(denominator)
+except Exception as e:
+    print("The denominator is not a number")
+    
+try: 
+    result = numerator / denominator
+    print("The result of this division is ", result)
+except Exception as e:
+    print('This division cannot be performed.')
+except ZeroDivisionError:
+    print('You cannot divide by 0')
+finally:
+    print('Goodbye!')
