@@ -322,14 +322,24 @@ This is a multi line comment
 # finally:
     # print('Goodbye!')
 
-def find_all_odds(lst):
-    new_list = []
-    for i in lst:
-        if i % 2 == 1:
-            new_list.append(i)
-    return new_list
+# def find_all_odds(lst):
+#     new_list = []
+#     for i in lst:
+#         if i % 2 == 1:
+#             new_list.append(i)
+#     return new_list
 
 
-a = find_all_odds([-1, -3, 1, 3, 2, 1])
+# a = find_all_odds([-1, -3, 1, 3, 2, 1])
+# print(a)
+# 
+
+def string_lengths(strings):
+    lengths = []
+    for string in strings:
+        length = len(string)
+        lengths.append(length)
+    return lengths
+    
+a = string_lengths(["Hello", "this", "is", "a", "beard", "orange", "blue"])
 print(a)
-#    
