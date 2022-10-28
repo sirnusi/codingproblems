@@ -301,23 +301,35 @@ This is a multi line comment
 # raise Exception("A new error")
 
 
-numerator = input("Enter the numerator: ")
-denominator = input("Enter the denominator: ")
-try:
-    numerator = float(numerator)
-except Exception as e:
-    print("The numerator is not a number")
-try:
-    denominator = float(denominator)
-except Exception as e:
-    print("The denominator is not a number")
-    
-try: 
-    result = numerator / denominator
-    print("The result of this division is ", result)
-except Exception as e:
-    print('This division cannot be performed.')
-except ZeroDivisionError:
-    print('You cannot divide by 0')
-finally:
-    print('Goodbye!')
+# numerator = input("Enter the numerator: ")
+# denominator = input("Enter the denominator: ")
+# try:
+#     numerator = float(numerator)
+# except Exception as e:
+#     print("The numerator is not a number")
+# try:
+#     denominator = float(denominator)
+# except Exception as e:
+#     print("The denominator is not a number")
+
+# try: 
+#     result = numerator / denominator
+#     print("The result of this division is ", result)
+# except Exception as e:
+#     print('This division cannot be performed.')
+# except ZeroDivisionError:
+#     print('You cannot divide by 0')
+# finally:
+    # print('Goodbye!')
+
+def find_all_odds(lst):
+    new_list = []
+    for i in lst:
+        if i % 2 == 1:
+            new_list.append(i)
+    return new_list
+
+
+a = find_all_odds([-1, -3, 1, 3, 2, 1])
+print(a)
+#    
