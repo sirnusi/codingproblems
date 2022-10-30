@@ -334,12 +334,35 @@ This is a multi line comment
 # print(a)
 # 
 
-def string_lengths(strings):
-    lengths = []
-    for string in strings:
-        length = len(string)
-        lengths.append(length)
-    return lengths
+# def string_lengths(strings):
+#     lengths = []
+#     for string in strings:
+#         length = len(string)
+#         lengths.append(length)
+#     return lengths
     
-a = string_lengths(["Hello", "this", "is", "a", "beard", "orange", "blue"])
-print(a)
+# a = string_lengths(["Hello", "this", "is", "a", "beard", "orange", "blue"])
+# print(a)
+
+# def compare_list(lst1=[], lst2=[]):
+#     set_list1 = set(lst1)
+#     set_list2 = set(lst2)
+#     set_intersection = set_list1.intersection(set_list2)
+#     print(len(set_intersection))
+# compare_list(lst2=[1,2,3])
+
+def running_sums(numbers):
+    i = 0
+    new_list = []
+    sum_list = 0
+    while i < len(numbers):
+        sum_list += numbers[i]
+        new_list.append(sum_list)
+        i+=1
+    print(new_list)
+
+    #     new_list.append(add_list)
+    # print (new_list)
+
+running_sums([5,4,2,1,5,6,4])
+
