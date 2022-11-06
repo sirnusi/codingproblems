@@ -1,3 +1,4 @@
+
 # b = int 6
 # a = float 2.3
 
@@ -351,18 +352,29 @@ This is a multi line comment
 #     print(len(set_intersection))
 # compare_list(lst2=[1,2,3])
 
-def running_sums(numbers):
-    i = 0
-    new_list = []
-    sum_list = 0
-    while i < len(numbers):
-        sum_list += numbers[i]
-        new_list.append(sum_list)
-        i+=1
-    print(new_list)
+# def running_sums(numbers):
+#     i = 0
+#     new_list = []
+#     sum_list = 0
+#     while i < len(numbers):
+#         sum_list += numbers[i]
+#         new_list.append(sum_list)
+#         i+=1
+#     print(new_list)
 
-    #     new_list.append(add_list)
-    # print (new_list)
+# running_sums([5,4,2,1,5,6,4])
 
-running_sums([5,4,2,1,5,6,4])
+# def replace(lst, target, swap_value):
+#     for idx in range(len(lst)):
+#         element = lst[idx]
+
+#         if element == target:
+#             lst[idx] = swap_value
+            
+
+
+# lst = ["tim", "is", "great", "tim", "is", "tim"]
+# new_lst = replace(lst, "tim", "world")
+# print(new_lst)
+
 
