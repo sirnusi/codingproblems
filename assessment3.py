@@ -1,10 +1,18 @@
-def sort_employees(employees):
-    return employees[1]
+def sort_employees(employees, sort_by):
+    sort_indices = ["name", "age", "salary"]
+    sort_index = sort_indices.index(sort_by)
 
+    sorted_employees = sorted(employees, key=lambda x: x[sort_index])
+
+    return sorted_employees
 
 employees = [
-    ["john", 10, 20000], 
-    ["doe", 19, 100000]
+    ["John", 33, 65000],
+    ["sarah", 24, 75000],
+    ['Josie', 29, 10000],
+    ["jason", 26, 55000],
+    ["Connor", 25, 110000]
 ]
-employees.sort(key=sort_employees)
-print(employees)
+sort_by = "age"
+a = sort_employees(employees, sort_by)
+print(a)
