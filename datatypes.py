@@ -377,4 +377,84 @@ This is a multi line comment
 # new_lst = replace(lst, "tim", "world")
 # print(new_lst)
 
+# class Fruit():
+#     def __init__(self, name, calories):
+#         self.name = name
+#         self.calories = calories
 
+#         print(f"Fruit name is {self.name} and calories of about {self.calories}")
+
+# f1 = Fruit("Apple", 13)
+# # print(f1)
+
+
+class Counter:
+    def __init__(self):
+        self.count = 0
+        self.locked = False
+
+    def toggle_lock(self):
+        self.locked = not self.locked
+
+    def increment(self):
+        if self.locked:
+            raise Exception('It is locked!')
+        self.count += 1
+    
+    def decrement(self):
+        if self.locked:
+            raise Exception('It is locked!')
+        self.count -= 1 
+    
+    def print_counter(self):
+        print(f"The number of count is {self.count}")
+
+# counter1 = Counter()
+# counter1.increment()
+# counter1.increment()
+# counter1.increment()
+# counter1.decrement()
+# counter1.print_counter()
+
+# counter1.toggle_lock()
+# counter1.increment()
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+        self._salary = 0
+
+    @property
+    def salary(self):
+        return round(self._salary)
+
+    @salary.setter
+    def salary(self, salary):
+        if salary < 0:
+            raise ValueError('This is invalid!')
+        self._salary = salary
+
+
+
+# p1 = Person("Tim")
+# p1.salary = -15
+# print(p1.salary)
+
+
+class Time:
+    def __init__(self, second):
+        self._second = second
+
+    @property
+    def second(self):
+        return self._second
+
+    @second.setter
+    def second(self, second):
+        if second < 0 or second > 60:
+            raise Exception('This is invalid time!')
+        self._second = second
+
+t = Time(60)
+t.second = 59
+print(t.second)
